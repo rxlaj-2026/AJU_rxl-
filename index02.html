@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edu_Bridge | Student Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="brand">Edu<span>_Bridge</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button id="loginNav" class="btn small">Student Login</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">STUDENT SUPPORT PLATFORM</p>
+        <h1>Your education journey,<br><strong>connected.</strong></h1>
+        <p class="hero-text">
+          Edu_Bridge connects registered students with their support team
+          for admission, documents, scholarships, college queries and more.
+        </p>
+        <div class="actions">
+          <button id="loginHero" class="btn">Student Login</button>
+          <a href="#services" class="btn secondary">Explore Services</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card-icon">EB</div>
+        <h3>One place for your problems</h3>
+        <p>Raise a support request and track its status with your unique Student ID.</p>
+        <div class="status-row"><span>●</span> Support available</div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <p class="eyebrow">WHAT WE SUPPORT</p>
+      <h2>Everything in one bridge.</h2>
+      <div class="grid">
+        <article>
+          <div class="icon">🎓</div>
+          <h3>Admission</h3>
+          <p>Admission-related guidance and support.</p>
+        </article>
+        <article>
+          <div class="icon">📄</div>
+          <h3>Documents</h3>
+          <p>Help with required documents and verification.</p>
+        </article>
+        <article>
+          <div class="icon">💰</div>
+          <h3>Scholarship</h3>
+          <p>Support for scholarship-related queries.</p>
+        </article>
+        <article>
+          <div class="icon">🏫</div>
+          <h3>College Support</h3>
+          <p>Raise college, hostel and academic concerns.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section split">
+      <div>
+        <p class="eyebrow">ABOUT EDU_BRIDGE</p>
+        <h2>A direct support channel for registered students.</h2>
+      </div>
+      <p>
+        Edu_Bridge is designed for students who have taken admission through
+        the Edu_Bridge network. Each student will receive a unique ID and
+        access to a private support portal.
+      </p>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="eyebrow">CONTACT</p>
+      <h2>Need help?</h2>
+      <p>Registered students can log in and submit their problem directly.</p>
+      <button id="loginContact" class="btn">Open Student Portal</button>
+    </section>
+  </main>
+
+  <div id="loginModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+    <div class="modal-box">
+      <button id="closeModal" class="close" aria-label="Close">×</button>
+      <p class="eyebrow">EDU_BRIDGE PORTAL</p>
+      <h2 id="loginTitle">Student Login</h2>
+      <p class="muted">Use your unique Student ID and password.</p>
+      <form id="loginForm">
+        <label>Student ID
+          <input id="studentId" required placeholder="Example: EDU-001">
+        </label>
+        <label>Password
+          <input id="password" type="password" required placeholder="Password">
+        </label>
+        <button class="btn full" type="submit">Login</button>
+        <p id="loginMessage" class="message"></p>
+      </form>
+      <p class="demo">Demo for testing: <b>EDU-001</b> / <b>1234</b></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
